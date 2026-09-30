@@ -51,7 +51,8 @@
   .app { color: var(--muted); margin: 0 0 2rem; }
   .updated { font-size: 0.9rem; color: var(--muted); }
 
-  .langs { display: flex; gap: 0.75rem; margin: 0 0 2.5rem; font-size: 0.9rem; }
+  .langs { display: flex; flex-wrap: wrap; gap: 0.4rem 0.75rem; margin: 0 0 2.5rem; font-size: 0.9rem; }
+  .langs a { white-space: nowrap; }
 
   hr {
     border: 0;
@@ -72,38 +73,55 @@
 <main>
 
   <h1>Word Hunter · Словолов · Soʻz Ovi</h1>
-  <p class="app">Одна игра под тремя именами · One game under three names · Bitta oʻyin, uchta nom<br>
-  Приложение / app / ilova: <code>com.wordhunter.game</code></p>
+  <p class="app">Word Hunter — 12 languages · 12 языков · 12 til<br>
+Privacy policy / Политика конфиденциальности · <code>com.wordhunter.game</code></p>
 
-  <p class="langs"><a href="#ru">По-русски</a> · <a href="#en">English</a> · <a href="#uz">Oʻzbekcha</a></p>
+  <p class="langs"><a href="#ru">По-русски</a> · <a href="#en">English</a> · <a href="#uz">Oʻzbekcha</a> · <a href="#uk">Українська</a> · <a href="#pl">Polski</a> · <a href="#de">Deutsch</a> · <a href="#es">Español</a> · <a href="#fr">Français</a> · <a href="#pt">Português</a> · <a href="#it">Italiano</a> · <a href="#tr">Türkçe</a> · <a href="#id">Bahasa Indonesia</a></p>
 
   <section id="ru" lang="ru">
 
     <h2>Политика конфиденциальности</h2>
-    <p class="updated">Дата вступления в силу: 6 сентября 2026 года</p>
+    <p class="updated">Дата вступления в силу: 1 октября 2026 года</p>
 
     <h3>Коротко</h3>
     <p>
-      Игра не требует аккаунта, не просит регистрации и не собирает ваши персональные данные.
-      Игровой прогресс хранится только на вашем устройстве. Единственный сторонний сервис
-      в приложении — Google AdMob, который показывает рекламу.
+      Игра не требует аккаунта и регистрации, у неё нет собственного сервера, и мы не собираем
+      и не видим ваши персональные данные. Прогресс хранится на вашем устройстве. Сторонние
+      сервисы в приложении — Google AdMob (реклама), Google Play (покупки) и синтезатор речи
+      вашего устройства (произношение слов).
     </p>
 
-    <h3>Какие данные хранит приложение</h3>
+    <h3>Кто мы</h3>
     <p>
-      Пройденные уровни, монеты, звёзды, найденные слова, кубки, купленные улучшения,
-      выбранный язык и настройки сохраняются в памяти устройства. Эти данные никуда
-      не передаются, и мы их не видим. Удаление приложения удаляет их полностью.
+      Приложение Word Hunter (в магазине оно выходит под именами Word Hunter, Словолов, Soʻz Ovi, Chasse aux mots, Wortjagd, Cazapalabras, Caça-Palavras, Caccia Parole, Buru Kata, Kelime Avı, Ловець слів, Łowca Słów — по языку карточки; идентификатор <code>com.wordhunter.game</code>)
+      выпускает независимый разработчик. Связь: <a href="mailto:fnkodirov@gmail.com">fnkodirov@gmail.com</a>.
+    </p>
+
+    <h3>Что хранится на вашем устройстве</h3>
+    <ul>
+      <li>пройденные уровни, звёзды и лучшее время без подсказок;</li>
+      <li>монеты, найденные слова, кубки, купленные улучшения и оформления;</li>
+      <li>ежедневные награды, задания и серия дней;</li>
+      <li>имя и аватар, которые вы выбрали сами;</li>
+      <li>выбранный язык игры и настройки.</li>
+    </ul>
+    <p>
+      Эти данные лежат в памяти устройства. Мы их не получаем и не видим: у игры нет собственного
+      сервера, нет аккаунтов, аналитики и отчётов об ошибках. Имя, которое вы вводите, остаётся
+      на устройстве и никуда не отправляется.
     </p>
 
     <h3>Реклама</h3>
-    <p>Приложение показывает рекламу через Google AdMob в двух местах:</p>
+    <p>Приложение показывает рекламу через Google AdMob:</p>
     <ul>
       <li>баннер внизу экрана во время партии — он появляется сам;</li>
-      <li>видеоролик с вознаграждением — только когда вы сами нажали кнопку, чтобы
-        получить подсказки или монеты.</li>
+      <li>видеоролик с вознаграждением — только когда вы сами нажали кнопку, чтобы получить
+        подсказки или монеты.</li>
     </ul>
-    <p>Полноэкранной рекламы между уровнями в игре нет вовсе.</p>
+    <p>
+      Полноэкранной рекламы между уровнями в игре нет вовсе. Любая покупка в приложении
+      (набор монет или «Комплект игрока») убирает баннер.
+    </p>
     <p>Для показа рекламы Google может получать:</p>
     <ul>
       <li>рекламный идентификатор устройства (Advertising ID);</li>
@@ -112,9 +130,45 @@
       <li>события, связанные с рекламой: показ, просмотр, нажатие.</li>
     </ul>
     <p>
-      Приложение запрашивает только неперсонализированную рекламу. Как Google собирает
-      и использует эти данные, описано здесь:
+      <strong>Согласие.</strong> В странах, где действует GDPR (Европейская экономическая зона,
+      Великобритания, Швейцария), при первом запуске показывается форма согласия Google.
+      Персонализированная реклама включается там только если вы её разрешили, и до вашего ответа
+      реклама не запрашивается. Выбор можно изменить в любой момент: Настройки игры →
+      «Настройки рекламы» (пункт виден там, где форма применяется). В остальных странах реклама
+      может быть персонализированной; отказаться от этого можно в настройках Android (см. ниже).
+    </p>
+    <p>
+      Как Google собирает и использует эти данные, описано здесь:
       <a href="https://policies.google.com/technologies/partner-sites">policies.google.com/technologies/partner-sites</a>.
+    </p>
+
+    <h3>Покупки</h3>
+    <p>
+      Набор монет и «Комплект игрока» покупаются через Google Play. Оплату принимает и
+      обрабатывает Google: мы не получаем и не видим номер карты, имя плательщика и другие
+      платёжные данные. Чтобы вернуть купленное (например, после переустановки), приложение
+      спрашивает у Google Play, какие покупки есть на вашем аккаунте; подтверждение покупки
+      используется только на устройстве, на нашем сервере ничего не хранится.
+    </p>
+
+    <h3>Перенос прогресса и резервная копия</h3>
+    <p>
+      <strong>Файл.</strong> Кнопки «Сохранить в файл» и «Загрузить из файла» в настройках игры
+      создают и читают файл с вашим прогрессом — только когда вы сами их нажали. Куда отправить
+      этот файл (в облако, в мессенджер, на другой телефон), вы решаете сами через системное меню;
+      приложение никуда его не отправляет.
+    </p>
+    <p>
+      <strong>Резервная копия Android.</strong> Если на телефоне включена резервная копия Google,
+      система может копировать в ваш аккаунт Google базу с прогрессом и настройки игры и вернуть
+      их при установке на новый телефон. Это делает Android по правилам Google, а не мы; отключить
+      это можно в настройках телефона: <em>Настройки → Google → Резервное копирование</em>.
+    </p>
+
+    <h3>Кнопка «Поделиться»</h3>
+    <p>
+      Она открывает системное меню с коротким текстом и ссылкой на игру. Приложение само ничего
+      не отправляет: получателя выбираете вы.
     </p>
 
     <h3>Произношение слов</h3>
@@ -126,12 +180,31 @@
       и не храним.
     </p>
 
-    <h3>Что вы можете сделать</h3>
+    <h3>Сеть и разрешения</h3>
     <p>
-      Рекламный идентификатор можно сбросить или полностью отключить в настройках Android:
-      <em>Настройки → Конфиденциальность → Реклама</em>. Игровой прогресс удаляется кнопкой
-      «Очистить результаты» в настройках самой игры.
+      Игра работает без интернета. Сеть нужна только для рекламы, покупок и, если голос не
+      загружен, для синтезатора речи. Приложение не запрашивает доступ к контактам, камере,
+      микрофону, геолокации, фотографиям и файлам вашего устройства.
     </p>
+
+    <h3>Срок хранения и удаление</h3>
+    <p>
+      Данные игры хранятся на устройстве, пока вы не нажмёте «Очистить результаты» в настройках
+      или не удалите приложение. Копию в вашем аккаунте Google (если включена резервная копия)
+      можно удалить в настройках резервного копирования Google. Данные о рекламе хранит Google
+      по своим правилам.
+    </p>
+
+    <h3>Что вы можете сделать</h3>
+    <ul>
+      <li>Сбросить или полностью отключить рекламный идентификатор:
+        <em>Настройки Android → Конфиденциальность → Реклама</em> (на части телефонов —
+        <em>Настройки → Google → Реклама</em>).</li>
+      <li>Изменить согласие на рекламу: Настройки игры → «Настройки рекламы».</li>
+      <li>Удалить прогресс: «Очистить результаты» в настройках игры.</li>
+      <li>Вопросы о ваших данных — на почту ниже. Мы не храним ваших персональных данных, поэтому
+        запросы о рекламных данных нужно направлять Google.</li>
+    </ul>
 
     <h3>Дети</h3>
     <p>
@@ -146,9 +219,7 @@
     </p>
 
     <h3>Связь</h3>
-    <p class="contact">
-      Вопросы — на почту: <a href="mailto:fnkodirov@gmail.com">fnkodirov@gmail.com</a>
-    </p>
+    <p>Вопросы — на почту: <a href="mailto:fnkodirov@gmail.com">fnkodirov@gmail.com</a></p>
 
   </section>
 
@@ -157,29 +228,46 @@
   <section id="en" lang="en">
 
     <h2>Privacy Policy</h2>
-    <p class="updated">Effective date: 6 September 2026</p>
+    <p class="updated">Effective date: 1 October 2026</p>
 
     <h3>In short</h3>
     <p>
-      The game needs no account, asks for no sign-up and collects none of your personal data.
-      Your progress is stored on your device only. The single third-party service in the app
-      is Google AdMob, which serves the ads.
+      The game needs no account or sign-up, has no server of its own, and we neither collect nor
+      see your personal data. Your progress is stored on your device. The third-party services in
+      the app are Google AdMob (ads), Google Play (purchases) and your device's text-to-speech
+      engine (word pronunciation).
     </p>
 
-    <h3>What the app stores</h3>
+    <h3>Who we are</h3>
     <p>
-      Completed levels, coins, stars, the words you have found, trophies, purchased upgrades,
-      the language you chose and your settings are kept in the device's own storage. None of it
-      is sent anywhere, and we cannot see it. Deleting the app deletes all of it.
+      Word Hunter (in the store it appears as Word Hunter, Словолов, Soʻz Ovi, Chasse aux mots, Wortjagd, Cazapalabras, Caça-Palavras, Caccia Parole, Buru Kata, Kelime Avı, Ловець слів, Łowca Słów, depending on the listing language; app ID <code>com.wordhunter.game</code>) is published by
+      an independent developer. Contact: <a href="mailto:fnkodirov@gmail.com">fnkodirov@gmail.com</a>.
+    </p>
+
+    <h3>What is stored on your device</h3>
+    <ul>
+      <li>completed levels, stars and your best time without hints;</li>
+      <li>coins, found words, trophies, purchased upgrades and looks;</li>
+      <li>daily rewards, quests and the day streak;</li>
+      <li>the name and avatar you chose yourself;</li>
+      <li>the game language and your settings.</li>
+    </ul>
+    <p>
+      This data lives in the device's own storage. We do not receive or see it: the game has no
+      server of its own, no accounts, no analytics and no crash reporting. The name you enter stays
+      on your device and is sent nowhere.
     </p>
 
     <h3>Advertising</h3>
-    <p>The app shows ads through Google AdMob in two places:</p>
+    <p>The app shows ads through Google AdMob:</p>
     <ul>
       <li>a banner at the bottom of the screen while you play a level — it appears on its own;</li>
       <li>a rewarded video — only when you tap the button yourself to get hints or coins.</li>
     </ul>
-    <p>There are no full-screen ads between levels at all.</p>
+    <p>
+      There are no full-screen ads between levels at all. Any purchase in the app (a coin set or
+      the Player pack) removes the banner.
+    </p>
     <p>To serve an ad, Google may receive:</p>
     <ul>
       <li>the device advertising ID;</li>
@@ -188,9 +276,45 @@
       <li>ad events: impression, view, click.</li>
     </ul>
     <p>
-      The app requests non-personalised ads only. How Google collects and uses this data
-      is described here:
+      <strong>Consent.</strong> In countries where GDPR applies (the European Economic Area, the
+      United Kingdom, Switzerland) a Google consent form is shown on first launch. Personalised ads
+      are switched on there only if you allow them, and no ads are requested before you answer.
+      You can change your choice at any time: game Settings → "Ad settings" (the item appears
+      where the form applies). In other countries the ads may be personalised; you can opt out in
+      Android settings (see below).
+    </p>
+    <p>
+      How Google collects and uses this data is described here:
       <a href="https://policies.google.com/technologies/partner-sites">policies.google.com/technologies/partner-sites</a>.
+    </p>
+
+    <h3>Purchases</h3>
+    <p>
+      Coin sets and the Player pack are bought through Google Play. Google takes and processes the
+      payment: we do not receive or see your card number, the payer's name or other payment
+      details. To restore what you bought (for example after a reinstall), the app asks Google
+      Play which purchases your account has; the purchase confirmation is used only on the device,
+      and nothing is stored on any server of ours.
+    </p>
+
+    <h3>Moving your progress and backups</h3>
+    <p>
+      <strong>File.</strong> The "Save to a file" and "Load from a file" buttons in the game's
+      settings create and read a file with your progress — only when you tap them yourself. Where
+      the file goes (cloud storage, a messenger, another phone) is your choice through the system
+      menu; the app sends it nowhere.
+    </p>
+    <p>
+      <strong>Android backup.</strong> If Google backup is on for your phone, the system may copy
+      the game's progress database and settings to your Google account and restore them when you
+      set up a new phone. This is done by Android under Google's rules, not by us; you can turn it
+      off in phone settings: <em>Settings → Google → Backup</em>.
+    </p>
+
+    <h3>The "Share" button</h3>
+    <p>
+      It opens the system share menu with a short text and a link to the game. The app itself
+      sends nothing: you choose the recipient.
     </p>
 
     <h3>Word pronunciation</h3>
@@ -202,12 +326,29 @@
       that text.
     </p>
 
-    <h3>Your controls</h3>
+    <h3>Network and permissions</h3>
     <p>
-      You can reset or fully switch off the advertising ID in Android settings:
-      <em>Settings → Privacy → Ads</em>. Your game progress is erased with the "Clear results"
-      button in the app's own settings.
+      The game works offline. The network is needed only for ads, purchases and, when a voice is
+      not downloaded, for the speech engine. The app does not ask for access to your contacts,
+      camera, microphone, location, photos or files.
     </p>
+
+    <h3>Retention and deletion</h3>
+    <p>
+      Game data stays on the device until you tap "Clear results" in settings or uninstall the
+      app. A copy in your Google account (if backup is on) can be deleted in Google's backup
+      settings. Advertising data is kept by Google under its own rules.
+    </p>
+
+    <h3>Your choices</h3>
+    <ul>
+      <li>Reset or fully switch off the advertising ID:
+        <em>Android Settings → Privacy → Ads</em> (on some phones <em>Settings → Google → Ads</em>).</li>
+      <li>Change your ad consent: game Settings → "Ad settings".</li>
+      <li>Erase your progress: "Clear results" in the game's settings.</li>
+      <li>Questions about your data — write to the address below. We hold no personal data of
+        yours, so requests about advertising data must go to Google.</li>
+    </ul>
 
     <h3>Children</h3>
     <p>
@@ -222,9 +363,7 @@
     </p>
 
     <h3>Contact</h3>
-    <p class="contact">
-      Questions: <a href="mailto:fnkodirov@gmail.com">fnkodirov@gmail.com</a>
-    </p>
+    <p>Questions: <a href="mailto:fnkodirov@gmail.com">fnkodirov@gmail.com</a></p>
 
   </section>
 
@@ -233,31 +372,47 @@
   <section id="uz" lang="uz">
 
     <h2>Maxfiylik siyosati</h2>
-    <p class="updated">Kuchga kirgan sana: 2026-yil 6-sentabr</p>
+    <p class="updated">Kuchga kirgan sana: 2026-yil 1-oktabr</p>
 
     <h3>Qisqacha</h3>
     <p>
-      Oʻyin hisob yozuvini talab qilmaydi, roʻyxatdan oʻtishni soʻramaydi va sizning shaxsiy
-      maʼlumotlaringizni yigʻmaydi. Oʻyin natijalari faqat qurilmangizda saqlanadi. Ilovadagi
-      yagona uchinchi tomon xizmati — reklama koʻrsatuvchi Google AdMob.
+      Oʻyin hisob yozuvi va roʻyxatdan oʻtishni talab qilmaydi, uning oʻz serveri yoʻq, biz sizning
+      shaxsiy maʼlumotlaringizni yigʻmaymiz va koʻrmaymiz. Natijalar qurilmangizda saqlanadi.
+      Ilovadagi uchinchi tomon xizmatlari: Google AdMob (reklama), Google Play (xaridlar) va
+      qurilmangizdagi nutq sintezatori (soʻz talaffuzi).
     </p>
 
-    <h3>Ilova qanday maʼlumot saqlaydi</h3>
+    <h3>Biz kimmiz</h3>
     <p>
-      Oʻtilgan darajalar, tangalar, yulduzlar, topilgan soʻzlar, kuboklar, sotib olingan
-      yaxshilanishlar, tanlangan til va sozlamalar qurilmaning xotirasida saqlanadi.
-      Bu maʼlumot serverga yuborilmaydi va biz uni koʻra olmaymiz. Ilovani oʻchirsangiz,
-      u ham butunlay oʻchadi.
+      Word Hunter ilovasi (doʻkonda u Word Hunter, Словолов, Soʻz Ovi, Chasse aux mots, Wortjagd, Cazapalabras, Caça-Palavras, Caccia Parole, Buru Kata, Kelime Avı, Ловець слів, Łowca Słów nomlari bilan — sahifa tiliga qarab — chiqadi; identifikator <code>com.wordhunter.game</code>) mustaqil
+      dasturchi tomonidan chiqariladi. Aloqa: <a href="mailto:fnkodirov@gmail.com">fnkodirov@gmail.com</a>.
+    </p>
+
+    <h3>Qurilmangizda nimalar saqlanadi</h3>
+    <ul>
+      <li>oʻtilgan darajalar, yulduzlar va yordamsiz eng yaxshi vaqt;</li>
+      <li>tangalar, topilgan soʻzlar, kuboklar, sotib olingan yaxshilanishlar va bezaklar;</li>
+      <li>kunlik sovgʻalar, topshiriqlar va ketma-ket kunlar hisobi;</li>
+      <li>oʻzingiz tanlagan ism va avatar;</li>
+      <li>oʻyin tili va sozlamalar.</li>
+    </ul>
+    <p>
+      Bu maʼlumot qurilma xotirasida turadi. Biz uni olmaymiz va koʻrmaymiz: oʻyinning oʻz serveri,
+      hisob yozuvlari, tahlil xizmati va xatolar haqidagi hisobotlari yoʻq. Kiritgan ismingiz
+      qurilmada qoladi va hech qayerga yuborilmaydi.
     </p>
 
     <h3>Reklama</h3>
-    <p>Ilova Google AdMob orqali reklamani ikki joyda koʻrsatadi:</p>
+    <p>Ilova Google AdMob orqali reklama koʻrsatadi:</p>
     <ul>
       <li>daraja davomida ekranning pastki qismidagi banner — u oʻzi paydo boʻladi;</li>
       <li>mukofotli videoreklama — faqat siz yordam yoki tanga olish uchun tugmani
-        bosganingizda.</li>
+        oʻzingiz bosganingizda.</li>
     </ul>
-    <p>Darajalar orasida toʻliq ekranli reklama umuman koʻrsatilmaydi.</p>
+    <p>
+      Darajalar orasida toʻliq ekranli reklama umuman koʻrsatilmaydi. Ilovadagi har qanday xarid
+      (tangalar toʻplami yoki «Oʻyinchi toʻplami») bannerni olib tashlaydi.
+    </p>
     <p>Reklamani koʻrsatish uchun Google quyidagilarni olishi mumkin:</p>
     <ul>
       <li>qurilmaning reklama identifikatori (Advertising ID);</li>
@@ -266,9 +421,46 @@
       <li>reklama bilan bogʻliq harakatlar: koʻrsatilgani, koʻrilgani, bosilgani.</li>
     </ul>
     <p>
-      Ilova faqat shaxsiylashtirilmagan reklamani soʻraydi. Google qanday maʼlumot toʻplashi
-      va undan qanday foydalanishi:
+      <strong>Rozilik.</strong> GDPR amal qiladigan mamlakatlarda (Yevropa iqtisodiy hududi,
+      Buyuk Britaniya, Shveytsariya) birinchi ishga tushirishda Google rozilik formasi koʻrsatiladi.
+      U yerda shaxsiylashtirilgan reklama faqat siz ruxsat bersangiz yoqiladi, javob bermaguningizcha
+      reklama soʻralmaydi. Tanlovni istalgan payt oʻzgartirish mumkin: oʻyin sozlamalari →
+      «Reklama sozlamalari» (bu band forma qoʻllanadigan joylarda koʻrinadi). Boshqa mamlakatlarda
+      reklama shaxsiylashtirilgan boʻlishi mumkin; bundan Android sozlamalarida voz kechish mumkin
+      (pastga qarang).
+    </p>
+    <p>
+      Google bu maʼlumotni qanday yigʻishi va ishlatishi bu yerda yozilgan:
       <a href="https://policies.google.com/technologies/partner-sites">policies.google.com/technologies/partner-sites</a>.
+    </p>
+
+    <h3>Xaridlar</h3>
+    <p>
+      Tangalar toʻplami va «Oʻyinchi toʻplami» Google Play orqali sotib olinadi. Toʻlovni Google
+      qabul qiladi va qayta ishlaydi: biz karta raqamini, toʻlovchi ismini va boshqa toʻlov
+      maʼlumotlarini olmaymiz va koʻrmaymiz. Sotib olinganni tiklash uchun (masalan, qayta
+      oʻrnatgandan keyin) ilova Google Play dan hisobingizda qanday xaridlar borligini soʻraydi;
+      xarid tasdigʻi faqat qurilmada ishlatiladi, bizning serverimizda hech narsa saqlanmaydi.
+    </p>
+
+    <h3>Natijalarni koʻchirish va zaxira nusxa</h3>
+    <p>
+      <strong>Fayl.</strong> Oʻyin sozlamalaridagi «Faylga saqlash» va «Fayldan yuklash»
+      tugmalari natijalaringiz bilan faylni yaratadi va oʻqiydi — faqat siz oʻzingiz bosganingizda.
+      Faylni qayerga yuborish (bulutga, messenjerga, boshqa telefonga) sizning tanlovingiz:
+      tizim menyusi orqali; ilova uni hech qayerga yubormaydi.
+    </p>
+    <p>
+      <strong>Android zaxira nusxasi.</strong> Telefonda Google zaxira nusxasi yoqilgan boʻlsa,
+      tizim oʻyinning natijalar bazasi va sozlamalarini Google hisobingizga nusxalashi va yangi
+      telefonda tiklashi mumkin. Buni Android Google qoidalari bilan bajaradi, biz emas; uni telefon
+      sozlamalarida oʻchirish mumkin: <em>Sozlamalar → Google → Zaxira nusxa</em>.
+    </p>
+
+    <h3>«Ulashish» tugmasi</h3>
+    <p>
+      U tizim menyusini qisqa matn va oʻyinga havola bilan ochadi. Ilovaning oʻzi hech narsa
+      yubormaydi: qabul qiluvchini siz tanlaysiz.
     </p>
 
     <h3>Soʻz talaffuzi</h3>
@@ -280,12 +472,32 @@
       va saqlamaymiz.
     </p>
 
-    <h3>Nazorat sizda</h3>
+    <h3>Tarmoq va ruxsatlar</h3>
     <p>
-      Android sozlamalarida reklama identifikatorini tiklashingiz yoki butunlay
-      oʻchirishingiz mumkin: <em>Sozlamalar → Maxfiylik → Reklama</em>. Oʻyin natijalarini esa
-      ilovaning sozlamalar boʻlimidagi «Natijalarni tozalash» tugmasi orqali oʻchirasiz.
+      Oʻyin internetsiz ishlaydi. Tarmoq faqat reklama, xaridlar va ovoz yuklanmagan boʻlsa nutq
+      sintezatori uchun kerak. Ilova kontaktlar, kamera, mikrofon, joylashuv, suratlar va
+      fayllarga kirishni soʻramaydi.
     </p>
+
+    <h3>Saqlash muddati va oʻchirish</h3>
+    <p>
+      Oʻyin maʼlumotlari sozlamalardagi «Natijalarni tozalash» tugmasini bosmaguningizcha yoki
+      ilovani oʻchirmaguningizcha qurilmada turadi. Google hisobingizdagi nusxani (zaxira nusxa
+      yoqilgan boʻlsa) Google zaxira sozlamalarida oʻchirish mumkin. Reklama maʼlumotlarini Google
+      oʻz qoidalariga koʻra saqlaydi.
+    </p>
+
+    <h3>Nazorat sizda</h3>
+    <ul>
+      <li>Reklama identifikatorini tiklash yoki butunlay oʻchirish:
+        <em>Android sozlamalari → Maxfiylik → Reklama</em> (baʼzi telefonlarda
+        <em>Sozlamalar → Google → Reklama</em>).</li>
+      <li>Reklamaga rozilikni oʻzgartirish: oʻyin sozlamalari → «Reklama sozlamalari».</li>
+      <li>Natijalarni oʻchirish: oʻyin sozlamalaridagi «Natijalarni tozalash».</li>
+      <li>Maʼlumotlaringiz haqidagi savollar — quyidagi manzilga. Biz shaxsiy maʼlumotlaringizni
+        saqlamaymiz, shuning uchun reklama maʼlumotlari haqidagi soʻrovlar Google ga yuborilishi
+        kerak.</li>
+    </ul>
 
     <h3>Bolalar</h3>
     <p>
@@ -300,9 +512,709 @@
     </p>
 
     <h3>Bogʻlanish</h3>
-    <p class="contact">
-      Savollar boʻlsa yozing: <a href="mailto:fnkodirov@gmail.com">fnkodirov@gmail.com</a>
-    </p>
+    <p>Savollar boʻlsa yozing: <a href="mailto:fnkodirov@gmail.com">fnkodirov@gmail.com</a></p>
+
+  </section>
+
+  <hr>
+
+  <section id="uk" lang="uk">
+
+    <h2>Політика конфіденційності</h2>
+    <p class="updated">Дата набрання чинності: 1 жовтня 2026 року</p>
+
+    <h3>Коротко</h3>
+    <p>Гра не потребує акаунта й реєстрації, не має власного сервера, і ми не збираємо та не бачимо ваших персональних даних. Прогрес зберігається на вашому пристрої. Сторонні сервіси в застосунку — Google AdMob (реклама), Google Play (покупки) та синтезатор мовлення вашого пристрою (вимова слів).</p>
+
+    <h3>Хто ми</h3>
+    <p>Застосунок Word Hunter (у магазині він виходить під іменами Word Hunter, Словолов, Soʻz Ovi, Chasse aux mots, Wortjagd, Cazapalabras, Caça-Palavras, Caccia Parole, Buru Kata, Kelime Avı, Ловець слів, Łowca Słów — залежно від мови сторінки; ідентифікатор <code>com.wordhunter.game</code>) випускає незалежний розробник. Зв’язок: <a href="mailto:fnkodirov@gmail.com">fnkodirov@gmail.com</a>.</p>
+
+    <h3>Що зберігається на вашому пристрої</h3>
+    <ul>
+      <li>пройдені рівні, зірки та найкращий час без підказок;</li>
+      <li>монети, знайдені слова, кубки, куплені покращення й оформлення;</li>
+      <li>щоденні нагороди, завдання та серія днів;</li>
+      <li>ім’я та аватар, які ви вибрали самі;</li>
+      <li>мова гри та налаштування.</li>
+    </ul>
+    <p>Ці дані лежать у пам’яті пристрою. Ми не отримуємо й не бачимо їх: у гри немає власного сервера, акаунтів, аналітики та звітів про помилки. Ім’я, яке ви вводите, залишається на пристрої й нікуди не надсилається.</p>
+
+    <h3>Реклама</h3>
+    <p>Застосунок показує рекламу через Google AdMob:</p>
+    <ul>
+      <li>банер унизу екрана під час партії — він з’являється сам;</li>
+      <li>відео з нагородою — лише коли ви самі натиснули кнопку, щоб отримати підказки чи монети.</li>
+    </ul>
+    <p>Повноекранної реклами між рівнями в грі немає взагалі. Будь-яка покупка в застосунку (набір монет або «Комплект гравця») прибирає банер.</p>
+    <p>Для показу реклами Google може отримувати:</p>
+    <ul>
+      <li>рекламний ідентифікатор пристрою (Advertising ID);</li>
+      <li>відомості про пристрій: модель, версія операційної системи, мова;</li>
+      <li>IP-адресу та приблизне місцезнаходження, визначене за нею;</li>
+      <li>події, пов’язані з рекламою: показ, перегляд, натискання.</li>
+    </ul>
+    <p><strong>Згода.</strong> У країнах, де діє GDPR (Європейський економічний простір, Велика Британія, Швейцарія), під час першого запуску показується форма згоди Google. Персоналізована реклама вмикається там лише якщо ви її дозволили, і до вашої відповіді реклама не запитується. Вибір можна змінити будь-коли: Налаштування гри → «Налаштування реклами» (пункт видно там, де форма застосовується). В інших країнах реклама може бути персоналізованою; відмовитися від цього можна в налаштуваннях Android (див. нижче).</p>
+    <p>Як Google збирає й використовує ці дані, описано тут: <a href="https://policies.google.com/technologies/partner-sites">policies.google.com/technologies/partner-sites</a>.</p>
+
+    <h3>Покупки</h3>
+    <p>Набори монет і «Комплект гравця» купуються через Google Play. Оплату приймає й обробляє Google: ми не отримуємо й не бачимо номер картки, ім’я платника та інші платіжні дані. Щоб повернути куплене (наприклад, після перевстановлення), застосунок питає в Google Play, які покупки є на вашому акаунті; підтвердження покупки використовується лише на пристрої, на нашому сервері нічого не зберігається.</p>
+
+    <h3>Перенесення прогресу та резервна копія</h3>
+    <p><strong>Файл.</strong> Кнопки «Зберегти у файл» і «Завантажити з файлу» в налаштуваннях гри створюють і читають файл із вашим прогресом — лише коли ви самі їх натиснули. Куди надіслати цей файл (у хмару, в месенджер, на інший телефон), ви вирішуєте самі через системне меню; застосунок нікуди його не надсилає.</p>
+    <p><strong>Резервна копія Android.</strong> Якщо на телефоні ввімкнено резервне копіювання Google, система може копіювати до вашого акаунта Google базу з прогресом і налаштування гри та повертати їх під час встановлення на новий телефон. Це робить Android за правилами Google, а не ми; вимкнути це можна в налаштуваннях телефона: <em>Налаштування → Google → Резервне копіювання</em>.</p>
+
+    <h3>Кнопка «Поділитися»</h3>
+    <p>Вона відкриває системне меню з коротким текстом і посиланням на гру. Застосунок сам нічого не надсилає: отримувача обираєте ви.</p>
+
+    <h3>Вимова слів</h3>
+    <p>У розділі «Мій словник» слово можна послухати. Вимовляє його не наш застосунок, а синтезатор мовлення, вбудований у пристрій, — слово передається йому. На Android це зазвичай «Мовленнєві служби Google»: якщо потрібний голос не завантажено на пристрій, служба може обробити текст на своїх серверах. Ми цей текст не отримуємо й не зберігаємо.</p>
+
+    <h3>Мережа та дозволи</h3>
+    <p>Гра працює без інтернету. Мережа потрібна лише для реклами, покупок і, якщо голос не завантажено, для синтезатора мовлення. Застосунок не просить доступу до контактів, камери, мікрофона, геолокації, фотографій і файлів вашого пристрою.</p>
+
+    <h3>Строк зберігання та видалення</h3>
+    <p>Дані гри зберігаються на пристрої, доки ви не натиснете «Очистити результати» в налаштуваннях або не видалите застосунок. Копію у вашому акаунті Google (якщо ввімкнено резервне копіювання) можна видалити в налаштуваннях резервного копіювання Google. Дані про рекламу зберігає Google за власними правилами.</p>
+
+    <h3>Що ви можете зробити</h3>
+    <ul>
+      <li>Скинути або повністю вимкнути рекламний ідентифікатор: <em>Налаштування Android → Конфіденційність → Реклама</em> (на деяких телефонах — <em>Налаштування → Google → Реклама</em>).</li>
+      <li>Змінити згоду на рекламу: Налаштування гри → «Налаштування реклами».</li>
+      <li>Видалити прогрес: «Очистити результати» в налаштуваннях гри.</li>
+      <li>Питання про ваші дані — на пошту нижче. Ми не зберігаємо ваших персональних даних, тому запити про рекламні дані слід надсилати до Google.</li>
+    </ul>
+
+    <h3>Діти</h3>
+    <p>Застосунок не призначений для дітей до 13 років і не збирає навмисно жодних даних про них.</p>
+
+    <h3>Зміни</h3>
+    <p>Якщо політика зміниться, новий текст буде опубліковано на цій сторінці, а дату набрання чинності оновлено.</p>
+
+    <h3>Зв’язок</h3>
+    <p>Питання — на пошту: <a href="mailto:fnkodirov@gmail.com">fnkodirov@gmail.com</a></p>
+
+  </section>
+
+  <hr>
+
+  <section id="pl" lang="pl">
+
+    <h2>Polityka prywatności</h2>
+    <p class="updated">Data wejścia w życie: 1 października 2026</p>
+
+    <h3>W skrócie</h3>
+    <p>Gra nie wymaga konta ani rejestracji, nie ma własnego serwera, a my nie zbieramy ani nie widzimy Twoich danych osobowych. Postęp jest zapisany na Twoim urządzeniu. Usługi zewnętrzne w aplikacji to Google AdMob (reklamy), Google Play (zakupy) i syntezator mowy Twojego urządzenia (wymowa słów).</p>
+
+    <h3>Kim jesteśmy</h3>
+    <p>Aplikację Word Hunter (w sklepie ukazuje się pod nazwami Word Hunter, Словолов, Soʻz Ovi, Chasse aux mots, Wortjagd, Cazapalabras, Caça-Palavras, Caccia Parole, Buru Kata, Kelime Avı, Ловець слів, Łowca Słów — zależnie od języka strony; identyfikator <code>com.wordhunter.game</code>) wydaje niezależny programista. Kontakt: <a href="mailto:fnkodirov@gmail.com">fnkodirov@gmail.com</a>.</p>
+
+    <h3>Co jest zapisane na Twoim urządzeniu</h3>
+    <ul>
+      <li>ukończone poziomy, gwiazdki i najlepszy czas bez podpowiedzi;</li>
+      <li>monety, znalezione słowa, puchary, kupione ulepszenia i motywy;</li>
+      <li>codzienne nagrody, zadania i seria dni;</li>
+      <li>imię i awatar wybrane przez Ciebie;</li>
+      <li>język gry i ustawienia.</li>
+    </ul>
+    <p>Te dane znajdują się w pamięci urządzenia. Nie otrzymujemy ich i nie widzimy: gra nie ma własnego serwera, kont, analityki ani raportów o błędach. Wpisane przez Ciebie imię zostaje na urządzeniu i nie jest nigdzie wysyłane.</p>
+
+    <h3>Reklamy</h3>
+    <p>Aplikacja wyświetla reklamy przez Google AdMob:</p>
+    <ul>
+      <li>baner na dole ekranu podczas gry na poziomie — pojawia się sam;</li>
+      <li>film z nagrodą — tylko wtedy, gdy sam naciśniesz przycisk, aby dostać podpowiedzi lub monety.</li>
+    </ul>
+    <p>Reklam pełnoekranowych między poziomami w grze nie ma wcale. Każdy zakup w aplikacji (zestaw monet lub „Zestaw gracza”) usuwa baner.</p>
+    <p>Aby wyświetlić reklamę, Google może otrzymywać:</p>
+    <ul>
+      <li>identyfikator reklamowy urządzenia (Advertising ID);</li>
+      <li>dane urządzenia: model, wersja systemu operacyjnego, język;</li>
+      <li>adres IP i przybliżoną lokalizację ustaloną na jego podstawie;</li>
+      <li>zdarzenia związane z reklamą: wyświetlenie, obejrzenie, kliknięcie.</li>
+    </ul>
+    <p><strong>Zgoda.</strong> W krajach, w których obowiązuje RODO (Europejski Obszar Gospodarczy, Wielka Brytania, Szwajcaria), przy pierwszym uruchomieniu wyświetla się formularz zgody Google. Reklamy spersonalizowane włączają się tam tylko wtedy, gdy na nie pozwolisz, a przed Twoją odpowiedzią reklamy nie są pobierane. Wybór możesz zmienić w każdej chwili: Ustawienia gry → „Ustawienia reklam” (pozycja jest widoczna tam, gdzie formularz ma zastosowanie). W innych krajach reklamy mogą być spersonalizowane; możesz z tego zrezygnować w ustawieniach Androida (patrz niżej).</p>
+    <p>Jak Google zbiera i wykorzystuje te dane, opisano tutaj: <a href="https://policies.google.com/technologies/partner-sites">policies.google.com/technologies/partner-sites</a>.</p>
+
+    <h3>Zakupy</h3>
+    <p>Zestawy monet i „Zestaw gracza” kupuje się przez Google Play. Płatność przyjmuje i przetwarza Google: nie otrzymujemy ani nie widzimy numeru karty, imienia płatnika ani innych danych płatniczych. Aby przywrócić zakupy (na przykład po ponownej instalacji), aplikacja pyta Google Play, jakie zakupy ma Twoje konto; potwierdzenie zakupu jest używane tylko na urządzeniu, na naszym serwerze nic nie jest przechowywane.</p>
+
+    <h3>Przenoszenie postępu i kopia zapasowa</h3>
+    <p><strong>Plik.</strong> Przyciski „Zapisz do pliku” i „Wczytaj z pliku” w ustawieniach gry tworzą i odczytują plik z Twoim postępem — tylko wtedy, gdy sam je naciśniesz. Dokąd trafi plik (do chmury, komunikatora, na inny telefon), decydujesz Ty w menu systemowym; aplikacja nie wysyła go nigdzie.</p>
+    <p><strong>Kopia zapasowa Androida.</strong> Jeśli na telefonie włączona jest kopia zapasowa Google, system może kopiować na Twoje konto Google bazę z postępem i ustawienia gry oraz przywracać je na nowym telefonie. Robi to Android według zasad Google, a nie my; możesz to wyłączyć w ustawieniach telefonu: <em>Ustawienia → Google → Kopia zapasowa</em>.</p>
+
+    <h3>Przycisk „Udostępnij”</h3>
+    <p>Otwiera menu systemowe z krótkim tekstem i linkiem do gry. Aplikacja sama niczego nie wysyła: odbiorcę wybierasz Ty.</p>
+
+    <h3>Wymowa słów</h3>
+    <p>W sekcji „Mój słownik” można posłuchać słowa. Wymawia je nie nasza aplikacja, lecz syntezator mowy wbudowany w urządzenie — słowo jest mu przekazywane. Na Androidzie jest to zwykle „Usługi mowy Google”: jeśli potrzebny głos nie jest pobrany na urządzenie, usługa może przetworzyć tekst na własnych serwerach. Nie otrzymujemy tego tekstu ani go nie przechowujemy.</p>
+
+    <h3>Sieć i uprawnienia</h3>
+    <p>Gra działa bez internetu. Sieć jest potrzebna tylko do reklam, zakupów i — gdy głos nie jest pobrany — do syntezatora mowy. Aplikacja nie prosi o dostęp do kontaktów, aparatu, mikrofonu, lokalizacji, zdjęć ani plików Twojego urządzenia.</p>
+
+    <h3>Okres przechowywania i usuwanie</h3>
+    <p>Dane gry pozostają na urządzeniu, dopóki nie naciśniesz „Wyczyść wyniki” w ustawieniach lub nie usuniesz aplikacji. Kopię na Twoim koncie Google (jeśli kopia zapasowa jest włączona) możesz usunąć w ustawieniach kopii zapasowej Google. Dane reklamowe przechowuje Google według własnych zasad.</p>
+
+    <h3>Co możesz zrobić</h3>
+    <ul>
+      <li>Zresetować lub całkowicie wyłączyć identyfikator reklamowy: <em>Ustawienia Androida → Prywatność → Reklamy</em> (na części telefonów — <em>Ustawienia → Google → Reklamy</em>).</li>
+      <li>Zmienić zgodę na reklamy: Ustawienia gry → „Ustawienia reklam”.</li>
+      <li>Usunąć postęp: „Wyczyść wyniki” w ustawieniach gry.</li>
+      <li>Pytania o Twoje dane — na adres poniżej. Nie przechowujemy Twoich danych osobowych, więc wnioski dotyczące danych reklamowych trzeba kierować do Google.</li>
+    </ul>
+
+    <h3>Dzieci</h3>
+    <p>Aplikacja nie jest przeznaczona dla dzieci poniżej 13 lat i świadomie nie zbiera żadnych danych o nich.</p>
+
+    <h3>Zmiany</h3>
+    <p>Jeśli polityka się zmieni, nowy tekst zostanie opublikowany na tej stronie, a data wejścia w życie zaktualizowana.</p>
+
+    <h3>Kontakt</h3>
+    <p>Pytania — na adres: <a href="mailto:fnkodirov@gmail.com">fnkodirov@gmail.com</a></p>
+
+  </section>
+
+  <hr>
+
+  <section id="de" lang="de">
+
+    <h2>Datenschutzerklärung</h2>
+    <p class="updated">Gültig ab: 1. Oktober 2026</p>
+
+    <h3>Kurz gesagt</h3>
+    <p>Das Spiel braucht kein Konto und keine Registrierung, hat keinen eigenen Server, und wir sammeln und sehen keine deiner personenbezogenen Daten. Dein Fortschritt liegt auf deinem Gerät. Die Drittdienste in der App sind Google AdMob (Werbung), Google Play (Käufe) und die Sprachausgabe deines Geräts (Aussprache von Wörtern).</p>
+
+    <h3>Wer wir sind</h3>
+    <p>Die App Word Hunter (im Store erscheint sie je nach Sprache der Seite unter den Namen Word Hunter, Словолов, Soʻz Ovi, Chasse aux mots, Wortjagd, Cazapalabras, Caça-Palavras, Caccia Parole, Buru Kata, Kelime Avı, Ловець слів, Łowca Słów; App-ID <code>com.wordhunter.game</code>) wird von einem unabhängigen Entwickler herausgegeben. Kontakt: <a href="mailto:fnkodirov@gmail.com">fnkodirov@gmail.com</a>.</p>
+
+    <h3>Was auf deinem Gerät gespeichert wird</h3>
+    <ul>
+      <li>abgeschlossene Level, Sterne und deine Bestzeit ohne Tipps;</li>
+      <li>Münzen, gefundene Wörter, Pokale, gekaufte Verbesserungen und Designs;</li>
+      <li>tägliche Belohnungen, Aufgaben und die Tage-Serie;</li>
+      <li>Name und Avatar, die du selbst gewählt hast;</li>
+      <li>die Spielsprache und deine Einstellungen.</li>
+    </ul>
+    <p>Diese Daten liegen im Speicher des Geräts. Wir erhalten und sehen sie nicht: Das Spiel hat keinen eigenen Server, keine Konten, keine Analyse und keine Absturzberichte. Der Name, den du eingibst, bleibt auf dem Gerät und wird nirgendwohin gesendet.</p>
+
+    <h3>Werbung</h3>
+    <p>Die App zeigt Werbung über Google AdMob:</p>
+    <ul>
+      <li>ein Banner am unteren Bildschirmrand während eines Levels — es erscheint von selbst;</li>
+      <li>ein Belohnungsvideo — nur wenn du selbst die Taste drückst, um Tipps oder Münzen zu bekommen.</li>
+    </ul>
+    <p>Vollbildwerbung zwischen den Leveln gibt es gar nicht. Jeder Kauf in der App (ein Münzpaket oder das Spielerpaket) entfernt das Banner.</p>
+    <p>Um eine Anzeige auszuliefern, kann Google erhalten:</p>
+    <ul>
+      <li>die Werbe-ID des Geräts (Advertising ID);</li>
+      <li>Gerätedaten: Modell, Betriebssystemversion, Sprache;</li>
+      <li>die IP-Adresse und den daraus abgeleiteten ungefähren Standort;</li>
+      <li>Werbeereignisse: Anzeige, Ansicht, Klick.</li>
+    </ul>
+    <p><strong>Einwilligung.</strong> In Ländern, in denen die DSGVO gilt (Europäischer Wirtschaftsraum, Vereinigtes Königreich, Schweiz), erscheint beim ersten Start ein Google-Einwilligungsformular. Personalisierte Werbung wird dort nur eingeschaltet, wenn du sie erlaubst, und vor deiner Antwort wird keine Werbung angefordert. Du kannst deine Wahl jederzeit ändern: Spieleinstellungen → „Werbeeinstellungen“ (der Punkt erscheint dort, wo das Formular gilt). In anderen Ländern kann die Werbung personalisiert sein; du kannst das in den Android-Einstellungen abschalten (siehe unten).</p>
+    <p>Wie Google diese Daten erhebt und nutzt, ist hier beschrieben: <a href="https://policies.google.com/technologies/partner-sites">policies.google.com/technologies/partner-sites</a>.</p>
+
+    <h3>Käufe</h3>
+    <p>Münzpakete und das Spielerpaket werden über Google Play gekauft. Google nimmt die Zahlung entgegen und verarbeitet sie: Wir erhalten und sehen weder Kartennummer noch Namen des Zahlenden noch andere Zahlungsdaten. Um Gekauftes wiederherzustellen (zum Beispiel nach einer Neuinstallation), fragt die App bei Google Play ab, welche Käufe dein Konto hat; die Kaufbestätigung wird nur auf dem Gerät verwendet, auf unserem Server wird nichts gespeichert.</p>
+
+    <h3>Fortschritt übertragen und Sicherung</h3>
+    <p><strong>Datei.</strong> Die Tasten „In eine Datei sichern“ und „Aus einer Datei laden“ in den Spieleinstellungen erstellen und lesen eine Datei mit deinem Fortschritt — nur wenn du sie selbst drückst. Wohin die Datei geht (Cloud, Messenger, anderes Handy), entscheidest du im Systemmenü; die App sendet sie nirgendwohin.</p>
+    <p><strong>Android-Sicherung.</strong> Ist die Google-Sicherung auf deinem Handy eingeschaltet, kann das System die Fortschrittsdatenbank und die Einstellungen des Spiels in dein Google-Konto kopieren und auf einem neuen Handy wiederherstellen. Das erledigt Android nach den Regeln von Google, nicht wir; du kannst es in den Handy-Einstellungen abschalten: <em>Einstellungen → Google → Sicherung</em>.</p>
+
+    <h3>Die Taste „Teilen“</h3>
+    <p>Sie öffnet das System-Teilenmenü mit einem kurzen Text und einem Link zum Spiel. Die App selbst sendet nichts: Den Empfänger wählst du.</p>
+
+    <h3>Aussprache von Wörtern</h3>
+    <p>Unter „Mein Wörterbuch“ kannst du dir ein Wort anhören. Gesprochen wird es nicht von unserer App, sondern von der in dein Gerät eingebauten Sprachausgabe — das Wort wird an sie übergeben. Unter Android sind das meist die Google-Sprachdienste: Ist die passende Stimme nicht auf das Gerät geladen, kann der Dienst den Text auf seinen eigenen Servern verarbeiten. Diesen Text erhalten und speichern wir nicht.</p>
+
+    <h3>Netzwerk und Berechtigungen</h3>
+    <p>Das Spiel funktioniert ohne Internet. Das Netz wird nur für Werbung, Käufe und — wenn eine Stimme nicht geladen ist — für die Sprachausgabe gebraucht. Die App fragt nicht nach Zugriff auf Kontakte, Kamera, Mikrofon, Standort, Fotos oder Dateien deines Geräts.</p>
+
+    <h3>Speicherdauer und Löschung</h3>
+    <p>Die Spieldaten bleiben auf dem Gerät, bis du in den Einstellungen „Ergebnisse löschen“ drückst oder die App deinstallierst. Eine Kopie in deinem Google-Konto (falls die Sicherung an ist) kannst du in den Google-Sicherungseinstellungen löschen. Werbedaten speichert Google nach eigenen Regeln.</p>
+
+    <h3>Was du tun kannst</h3>
+    <ul>
+      <li>Die Werbe-ID zurücksetzen oder ganz abschalten: <em>Android-Einstellungen → Datenschutz → Werbung</em> (auf manchen Handys <em>Einstellungen → Google → Werbung</em>).</li>
+      <li>Die Einwilligung für Werbung ändern: Spieleinstellungen → „Werbeeinstellungen“.</li>
+      <li>Den Fortschritt löschen: „Ergebnisse löschen“ in den Spieleinstellungen.</li>
+      <li>Fragen zu deinen Daten — an die Adresse unten. Wir speichern keine personenbezogenen Daten von dir, daher müssen Anfragen zu Werbedaten an Google gehen.</li>
+    </ul>
+
+    <h3>Kinder</h3>
+    <p>Die App richtet sich nicht an Kinder unter 13 Jahren und sammelt wissentlich keine Daten über sie.</p>
+
+    <h3>Änderungen</h3>
+    <p>Ändert sich diese Erklärung, wird der neue Text auf dieser Seite veröffentlicht und das Datum aktualisiert.</p>
+
+    <h3>Kontakt</h3>
+    <p>Fragen an: <a href="mailto:fnkodirov@gmail.com">fnkodirov@gmail.com</a></p>
+
+  </section>
+
+  <hr>
+
+  <section id="es" lang="es">
+
+    <h2>Política de privacidad</h2>
+    <p class="updated">Fecha de entrada en vigor: 1 de octubre de 2026</p>
+
+    <h3>En breve</h3>
+    <p>El juego no necesita cuenta ni registro, no tiene servidor propio y no recogemos ni vemos tus datos personales. Tu progreso se guarda en tu dispositivo. Los servicios de terceros de la app son Google AdMob (anuncios), Google Play (compras) y el sintetizador de voz de tu dispositivo (pronunciación de palabras).</p>
+
+    <h3>Quiénes somos</h3>
+    <p>La app Word Hunter (en la tienda aparece con los nombres Word Hunter, Словолов, Soʻz Ovi, Chasse aux mots, Wortjagd, Cazapalabras, Caça-Palavras, Caccia Parole, Buru Kata, Kelime Avı, Ловець слів, Łowca Słów, según el idioma de la ficha; identificador <code>com.wordhunter.game</code>) la publica un desarrollador independiente. Contacto: <a href="mailto:fnkodirov@gmail.com">fnkodirov@gmail.com</a>.</p>
+
+    <h3>Qué se guarda en tu dispositivo</h3>
+    <ul>
+      <li>niveles completados, estrellas y tu mejor tiempo sin pistas;</li>
+      <li>monedas, palabras encontradas, trofeos, mejoras y aspectos comprados;</li>
+      <li>recompensas diarias, retos y la racha de días;</li>
+      <li>el nombre y el avatar que elegiste tú;</li>
+      <li>el idioma del juego y los ajustes.</li>
+    </ul>
+    <p>Estos datos están en el almacenamiento del dispositivo. No los recibimos ni los vemos: el juego no tiene servidor propio, cuentas, analítica ni informes de errores. El nombre que escribes se queda en el dispositivo y no se envía a ninguna parte.</p>
+
+    <h3>Publicidad</h3>
+    <p>La app muestra anuncios a través de Google AdMob:</p>
+    <ul>
+      <li>un banner en la parte inferior de la pantalla mientras juegas un nivel: aparece solo;</li>
+      <li>un vídeo con recompensa: solo cuando tú pulsas el botón para conseguir pistas o monedas.</li>
+    </ul>
+    <p>No hay anuncios a pantalla completa entre niveles. Cualquier compra dentro de la app (un pack de monedas o el «Pack del jugador») quita el banner.</p>
+    <p>Para mostrar un anuncio, Google puede recibir:</p>
+    <ul>
+      <li>el identificador de publicidad del dispositivo (Advertising ID);</li>
+      <li>datos del dispositivo: modelo, versión del sistema operativo, idioma;</li>
+      <li>la dirección IP y la ubicación aproximada que se deduce de ella;</li>
+      <li>eventos del anuncio: impresión, visualización, clic.</li>
+    </ul>
+    <p><strong>Consentimiento.</strong> En los países donde se aplica el RGPD (Espacio Económico Europeo, Reino Unido, Suiza), al primer arranque se muestra un formulario de consentimiento de Google. Allí la publicidad personalizada solo se activa si la permites, y no se solicitan anuncios hasta que respondes. Puedes cambiar tu elección en cualquier momento: Ajustes del juego → «Configuración de anuncios» (la opción aparece donde se aplica el formulario). En otros países los anuncios pueden ser personalizados; puedes desactivarlo en los ajustes de Android (ver abajo).</p>
+    <p>Cómo recoge y usa Google estos datos se describe aquí: <a href="https://policies.google.com/technologies/partner-sites">policies.google.com/technologies/partner-sites</a>.</p>
+
+    <h3>Compras</h3>
+    <p>Los packs de monedas y el «Pack del jugador» se compran a través de Google Play. Google cobra y procesa el pago: nosotros no recibimos ni vemos el número de tarjeta, el nombre del pagador ni otros datos de pago. Para recuperar lo comprado (por ejemplo, tras reinstalar), la app pregunta a Google Play qué compras tiene tu cuenta; la confirmación de la compra se usa solo en el dispositivo y en ningún servidor nuestro se guarda nada.</p>
+
+    <h3>Traslado del progreso y copia de seguridad</h3>
+    <p><strong>Archivo.</strong> Los botones «Guardar en un archivo» y «Cargar desde un archivo» en los ajustes del juego crean y leen un archivo con tu progreso, solo cuando los pulsas tú. Adónde va el archivo (la nube, un mensajero, otro teléfono) lo decides tú en el menú del sistema; la app no lo envía a ninguna parte.</p>
+    <p><strong>Copia de seguridad de Android.</strong> Si la copia de seguridad de Google está activada en tu teléfono, el sistema puede copiar a tu cuenta de Google la base de datos del progreso y los ajustes del juego, y restaurarlos en un teléfono nuevo. Lo hace Android según las reglas de Google, no nosotros; puedes desactivarlo en los ajustes del teléfono: <em>Ajustes → Google → Copia de seguridad</em>.</p>
+
+    <h3>El botón «Compartir»</h3>
+    <p>Abre el menú de compartir del sistema con un texto breve y un enlace al juego. La app no envía nada por sí sola: el destinatario lo eliges tú.</p>
+
+    <h3>Pronunciación de palabras</h3>
+    <p>En «Mi diccionario» puedes escuchar una palabra. No la pronuncia nuestra app, sino el sintetizador de voz integrado en tu dispositivo: la palabra se le pasa a él. En Android suele ser «Servicios de voz de Google»: si la voz necesaria no está descargada en el dispositivo, el servicio puede procesar el texto en sus propios servidores. Nosotros no recibimos ni guardamos ese texto.</p>
+
+    <h3>Red y permisos</h3>
+    <p>El juego funciona sin internet. La red solo hace falta para los anuncios, las compras y, si la voz no está descargada, para el sintetizador de voz. La app no pide acceso a contactos, cámara, micrófono, ubicación, fotos ni archivos de tu dispositivo.</p>
+
+    <h3>Conservación y eliminación</h3>
+    <p>Los datos del juego permanecen en el dispositivo hasta que pulses «Borrar los resultados» en los ajustes o desinstales la app. La copia en tu cuenta de Google (si la copia de seguridad está activada) puedes eliminarla en los ajustes de copia de seguridad de Google. Los datos publicitarios los conserva Google según sus propias reglas.</p>
+
+    <h3>Qué puedes hacer</h3>
+    <ul>
+      <li>Restablecer o desactivar por completo el identificador de publicidad: <em>Ajustes de Android → Privacidad → Anuncios</em> (en algunos teléfonos, <em>Ajustes → Google → Anuncios</em>).</li>
+      <li>Cambiar el consentimiento de anuncios: Ajustes del juego → «Configuración de anuncios».</li>
+      <li>Borrar el progreso: «Borrar los resultados» en los ajustes del juego.</li>
+      <li>Preguntas sobre tus datos: escribe a la dirección de abajo. No guardamos datos personales tuyos, así que las solicitudes sobre datos publicitarios deben dirigirse a Google.</li>
+    </ul>
+
+    <h3>Niños</h3>
+    <p>La app no está dirigida a menores de 13 años y no recoge a sabiendas ningún dato sobre ellos.</p>
+
+    <h3>Cambios</h3>
+    <p>Si esta política cambia, el nuevo texto se publicará en esta página y se actualizará la fecha de entrada en vigor.</p>
+
+    <h3>Contacto</h3>
+    <p>Preguntas: <a href="mailto:fnkodirov@gmail.com">fnkodirov@gmail.com</a></p>
+
+  </section>
+
+  <hr>
+
+  <section id="fr" lang="fr">
+
+    <h2>Politique de confidentialité</h2>
+    <p class="updated">Date d’entrée en vigueur : 1er octobre 2026</p>
+
+    <h3>En bref</h3>
+    <p>Le jeu ne demande ni compte ni inscription, n’a pas de serveur propre, et nous ne collectons ni ne voyons vos données personnelles. Votre progression est stockée sur votre appareil. Les services tiers de l’application sont Google AdMob (publicité), Google Play (achats) et la synthèse vocale de votre appareil (prononciation des mots).</p>
+
+    <h3>Qui nous sommes</h3>
+    <p>L’application Word Hunter (elle paraît sur le store sous les noms Word Hunter, Словолов, Soʻz Ovi, Chasse aux mots, Wortjagd, Cazapalabras, Caça-Palavras, Caccia Parole, Buru Kata, Kelime Avı, Ловець слів, Łowca Słów, selon la langue de la fiche ; identifiant <code>com.wordhunter.game</code>) est publiée par un développeur indépendant. Contact : <a href="mailto:fnkodirov@gmail.com">fnkodirov@gmail.com</a>.</p>
+
+    <h3>Ce qui est stocké sur votre appareil</h3>
+    <ul>
+      <li>niveaux terminés, étoiles et votre meilleur temps sans indices ;</li>
+      <li>pièces, mots trouvés, trophées, améliorations et apparences achetées ;</li>
+      <li>récompenses quotidiennes, défis et série de jours ;</li>
+      <li>le nom et l’avatar que vous avez choisis vous-même ;</li>
+      <li>la langue du jeu et les réglages.</li>
+    </ul>
+    <p>Ces données se trouvent dans la mémoire de l’appareil. Nous ne les recevons pas et ne les voyons pas : le jeu n’a ni serveur propre, ni comptes, ni analyse, ni rapports de plantage. Le nom que vous saisissez reste sur l’appareil et n’est envoyé nulle part.</p>
+
+    <h3>Publicité</h3>
+    <p>L’application affiche de la publicité via Google AdMob :</p>
+    <ul>
+      <li>une bannière en bas de l’écran pendant un niveau — elle apparaît toute seule ;</li>
+      <li>une vidéo avec récompense — seulement quand vous appuyez vous-même sur le bouton pour obtenir des indices ou des pièces.</li>
+    </ul>
+    <p>Il n’y a aucune publicité plein écran entre les niveaux. Tout achat dans l’application (un lot de pièces ou le « Pack du joueur ») supprime la bannière.</p>
+    <p>Pour afficher une annonce, Google peut recevoir :</p>
+    <ul>
+      <li>l’identifiant publicitaire de l’appareil (Advertising ID) ;</li>
+      <li>des informations sur l’appareil : modèle, version du système, langue ;</li>
+      <li>l’adresse IP et la position approximative qui en est déduite ;</li>
+      <li>des événements publicitaires : affichage, visionnage, clic.</li>
+    </ul>
+    <p><strong>Consentement.</strong> Dans les pays où le RGPD s’applique (Espace économique européen, Royaume-Uni, Suisse), un formulaire de consentement Google s’affiche au premier lancement. La publicité personnalisée n’y est activée que si vous l’autorisez, et aucune annonce n’est demandée avant votre réponse. Vous pouvez modifier votre choix à tout moment : Réglages du jeu → « Paramètres publicitaires » (l’option apparaît là où le formulaire s’applique). Dans les autres pays, la publicité peut être personnalisée ; vous pouvez la désactiver dans les réglages d’Android (voir ci-dessous).</p>
+    <p>La façon dont Google collecte et utilise ces données est décrite ici : <a href="https://policies.google.com/technologies/partner-sites">policies.google.com/technologies/partner-sites</a>.</p>
+
+    <h3>Achats</h3>
+    <p>Les lots de pièces et le « Pack du joueur » s’achètent via Google Play. Google encaisse et traite le paiement : nous ne recevons ni ne voyons le numéro de carte, le nom du payeur ni d’autres données de paiement. Pour récupérer vos achats (par exemple après une réinstallation), l’application demande à Google Play quels achats possède votre compte ; la confirmation d’achat n’est utilisée que sur l’appareil, et rien n’est stocké sur un serveur à nous.</p>
+
+    <h3>Transfert de la progression et sauvegarde</h3>
+    <p><strong>Fichier.</strong> Les boutons « Enregistrer dans un fichier » et « Charger depuis un fichier » dans les réglages du jeu créent et lisent un fichier contenant votre progression — seulement quand vous les appuyez vous-même. La destination du fichier (cloud, messagerie, autre téléphone) est votre choix dans le menu du système ; l’application ne l’envoie nulle part.</p>
+    <p><strong>Sauvegarde Android.</strong> Si la sauvegarde Google est activée sur votre téléphone, le système peut copier dans votre compte Google la base de la progression et les réglages du jeu, et les restaurer sur un nouveau téléphone. C’est Android qui le fait selon les règles de Google, pas nous ; vous pouvez le désactiver dans les réglages du téléphone : <em>Paramètres → Google → Sauvegarde</em>.</p>
+
+    <h3>Le bouton « Partager »</h3>
+    <p>Il ouvre le menu de partage du système avec un court texte et un lien vers le jeu. L’application n’envoie rien d’elle-même : c’est vous qui choisissez le destinataire.</p>
+
+    <h3>Prononciation des mots</h3>
+    <p>Dans « Mon dictionnaire », vous pouvez écouter un mot. Ce n’est pas notre application qui le prononce, mais la synthèse vocale intégrée à votre appareil — le mot lui est transmis. Sur Android, il s’agit généralement des « Services vocaux Google » : si la voix nécessaire n’est pas téléchargée sur l’appareil, le service peut traiter le texte sur ses propres serveurs. Nous ne recevons ni ne conservons ce texte.</p>
+
+    <h3>Réseau et autorisations</h3>
+    <p>Le jeu fonctionne sans internet. Le réseau n’est nécessaire que pour la publicité, les achats et, si une voix n’est pas téléchargée, pour la synthèse vocale. L’application ne demande pas l’accès aux contacts, à l’appareil photo, au micro, à la localisation, aux photos ni aux fichiers de votre appareil.</p>
+
+    <h3>Durée de conservation et suppression</h3>
+    <p>Les données du jeu restent sur l’appareil jusqu’à ce que vous appuyiez sur « Effacer les résultats » dans les réglages ou désinstalliez l’application. La copie dans votre compte Google (si la sauvegarde est activée) peut être supprimée dans les paramètres de sauvegarde de Google. Les données publicitaires sont conservées par Google selon ses propres règles.</p>
+
+    <h3>Ce que vous pouvez faire</h3>
+    <ul>
+      <li>Réinitialiser ou désactiver complètement l’identifiant publicitaire : <em>Paramètres Android → Confidentialité → Annonces</em> (sur certains téléphones, <em>Paramètres → Google → Annonces</em>).</li>
+      <li>Modifier le consentement publicitaire : Réglages du jeu → « Paramètres publicitaires ».</li>
+      <li>Effacer la progression : « Effacer les résultats » dans les réglages du jeu.</li>
+      <li>Questions sur vos données — à l’adresse ci-dessous. Nous ne conservons aucune donnée personnelle vous concernant ; les demandes relatives aux données publicitaires doivent donc être adressées à Google.</li>
+    </ul>
+
+    <h3>Enfants</h3>
+    <p>L’application ne s’adresse pas aux enfants de moins de 13 ans et ne collecte sciemment aucune donnée à leur sujet.</p>
+
+    <h3>Modifications</h3>
+    <p>Si cette politique change, le nouveau texte sera publié sur cette page et la date d’entrée en vigueur mise à jour.</p>
+
+    <h3>Contact</h3>
+    <p>Questions : <a href="mailto:fnkodirov@gmail.com">fnkodirov@gmail.com</a></p>
+
+  </section>
+
+  <hr>
+
+  <section id="pt" lang="pt">
+
+    <h2>Política de privacidade</h2>
+    <p class="updated">Data de vigência: 1.º de outubro de 2026</p>
+
+    <h3>Em resumo</h3>
+    <p>O jogo não exige conta nem cadastro, não tem servidor próprio, e nós não coletamos nem vemos seus dados pessoais. Seu progresso fica no seu dispositivo. Os serviços de terceiros no app são o Google AdMob (anúncios), o Google Play (compras) e o sintetizador de voz do seu dispositivo (pronúncia das palavras).</p>
+
+    <h3>Quem somos</h3>
+    <p>O app Word Hunter (na loja ele aparece com os nomes Word Hunter, Словолов, Soʻz Ovi, Chasse aux mots, Wortjagd, Cazapalabras, Caça-Palavras, Caccia Parole, Buru Kata, Kelime Avı, Ловець слів, Łowca Słów, conforme o idioma da página; identificador <code>com.wordhunter.game</code>) é publicado por um desenvolvedor independente. Contato: <a href="mailto:fnkodirov@gmail.com">fnkodirov@gmail.com</a>.</p>
+
+    <h3>O que fica salvo no seu dispositivo</h3>
+    <ul>
+      <li>níveis concluídos, estrelas e seu melhor tempo sem dicas;</li>
+      <li>moedas, palavras encontradas, troféus, melhorias e visuais comprados;</li>
+      <li>recompensas diárias, desafios e a sequência de dias;</li>
+      <li>o nome e o avatar que você mesmo escolheu;</li>
+      <li>o idioma do jogo e as configurações.</li>
+    </ul>
+    <p>Esses dados ficam na memória do dispositivo. Nós não os recebemos nem os vemos: o jogo não tem servidor próprio, contas, análise nem relatórios de erros. O nome que você digita fica no dispositivo e não é enviado a lugar nenhum.</p>
+
+    <h3>Publicidade</h3>
+    <p>O app exibe anúncios pelo Google AdMob:</p>
+    <ul>
+      <li>um banner na parte de baixo da tela durante um nível — ele aparece sozinho;</li>
+      <li>um vídeo com recompensa — somente quando você mesmo toca no botão para ganhar dicas ou moedas.</li>
+    </ul>
+    <p>Não há anúncios em tela cheia entre os níveis. Qualquer compra no app (um pacote de moedas ou o «Pacote do jogador») remove o banner.</p>
+    <p>Para exibir um anúncio, o Google pode receber:</p>
+    <ul>
+      <li>o identificador de publicidade do dispositivo (Advertising ID);</li>
+      <li>dados do dispositivo: modelo, versão do sistema operacional, idioma;</li>
+      <li>o endereço IP e a localização aproximada obtida a partir dele;</li>
+      <li>eventos do anúncio: exibição, visualização, clique.</li>
+    </ul>
+    <p><strong>Consentimento.</strong> Nos países em que a GDPR se aplica (Espaço Econômico Europeu, Reino Unido, Suíça), um formulário de consentimento do Google aparece na primeira abertura. Lá a publicidade personalizada só é ativada se você permitir, e nenhum anúncio é solicitado antes da sua resposta. Você pode mudar a escolha a qualquer momento: Configurações do jogo → «Configurações de anúncios» (o item aparece onde o formulário se aplica). Em outros países os anúncios podem ser personalizados; você pode desativar isso nas configurações do Android (veja abaixo).</p>
+    <p>Como o Google coleta e usa esses dados está descrito aqui: <a href="https://policies.google.com/technologies/partner-sites">policies.google.com/technologies/partner-sites</a>.</p>
+
+    <h3>Compras</h3>
+    <p>Os pacotes de moedas e o «Pacote do jogador» são comprados pelo Google Play. O Google recebe e processa o pagamento: nós não recebemos nem vemos o número do cartão, o nome do pagador nem outros dados de pagamento. Para restaurar o que você comprou (por exemplo, após reinstalar), o app pergunta ao Google Play quais compras a sua conta tem; a confirmação da compra é usada somente no dispositivo, e nada fica guardado em servidor nosso.</p>
+
+    <h3>Transferência de progresso e backup</h3>
+    <p><strong>Arquivo.</strong> Os botões «Salvar em um arquivo» e «Carregar de um arquivo» nas configurações do jogo criam e leem um arquivo com o seu progresso — somente quando você mesmo os toca. Para onde o arquivo vai (nuvem, mensageiro, outro telefone) é escolha sua no menu do sistema; o app não o envia a lugar nenhum.</p>
+    <p><strong>Backup do Android.</strong> Se o backup do Google estiver ativado no seu telefone, o sistema pode copiar para a sua conta do Google o banco de dados do progresso e as configurações do jogo e restaurá-los em um telefone novo. Isso é feito pelo Android, pelas regras do Google, e não por nós; você pode desativar nas configurações do telefone: <em>Configurações → Google → Backup</em>.</p>
+
+    <h3>O botão «Compartilhar»</h3>
+    <p>Ele abre o menu de compartilhamento do sistema com um texto curto e um link para o jogo. O app não envia nada por conta própria: quem recebe é você quem escolhe.</p>
+
+    <h3>Pronúncia das palavras</h3>
+    <p>Em «Meu dicionário» você pode ouvir uma palavra. Ela não é pronunciada pelo nosso app, e sim pelo sintetizador de voz embutido no seu dispositivo — a palavra é passada a ele. No Android costuma ser o «Serviços de fala do Google»: se a voz necessária não estiver baixada no dispositivo, o serviço pode processar o texto nos próprios servidores. Nós não recebemos nem guardamos esse texto.</p>
+
+    <h3>Rede e permissões</h3>
+    <p>O jogo funciona sem internet. A rede só é necessária para anúncios, compras e, se a voz não estiver baixada, para o sintetizador de voz. O app não pede acesso a contatos, câmera, microfone, localização, fotos nem arquivos do seu dispositivo.</p>
+
+    <h3>Prazo de guarda e exclusão</h3>
+    <p>Os dados do jogo ficam no dispositivo até você tocar em «Apagar os resultados» nas configurações ou desinstalar o app. A cópia na sua conta do Google (se o backup estiver ativado) pode ser excluída nas configurações de backup do Google. Os dados de publicidade são guardados pelo Google segundo as próprias regras.</p>
+
+    <h3>O que você pode fazer</h3>
+    <ul>
+      <li>Redefinir ou desativar por completo o identificador de publicidade: <em>Configurações do Android → Privacidade → Anúncios</em> (em alguns telefones, <em>Configurações → Google → Anúncios</em>).</li>
+      <li>Mudar o consentimento de anúncios: Configurações do jogo → «Configurações de anúncios».</li>
+      <li>Apagar o progresso: «Apagar os resultados» nas configurações do jogo.</li>
+      <li>Dúvidas sobre seus dados — escreva para o endereço abaixo. Não guardamos dados pessoais seus, então pedidos sobre dados de publicidade devem ser feitos ao Google.</li>
+    </ul>
+
+    <h3>Crianças</h3>
+    <p>O app não é destinado a crianças menores de 13 anos e não coleta conscientemente nenhum dado sobre elas.</p>
+
+    <h3>Alterações</h3>
+    <p>Se esta política mudar, o novo texto será publicado nesta página e a data de vigência atualizada.</p>
+
+    <h3>Contato</h3>
+    <p>Dúvidas: <a href="mailto:fnkodirov@gmail.com">fnkodirov@gmail.com</a></p>
+
+  </section>
+
+  <hr>
+
+  <section id="it" lang="it">
+
+    <h2>Informativa sulla privacy</h2>
+    <p class="updated">Data di entrata in vigore: 1° ottobre 2026</p>
+
+    <h3>In breve</h3>
+    <p>Il gioco non richiede un account né una registrazione, non ha un server proprio e noi non raccogliamo né vediamo i tuoi dati personali. I tuoi progressi sono salvati sul tuo dispositivo. I servizi di terze parti nell’app sono Google AdMob (pubblicità), Google Play (acquisti) e la sintesi vocale del tuo dispositivo (pronuncia delle parole).</p>
+
+    <h3>Chi siamo</h3>
+    <p>L’app Word Hunter (nello store compare con i nomi Word Hunter, Словолов, Soʻz Ovi, Chasse aux mots, Wortjagd, Cazapalabras, Caça-Palavras, Caccia Parole, Buru Kata, Kelime Avı, Ловець слів, Łowca Słów, a seconda della lingua della scheda; identificativo <code>com.wordhunter.game</code>) è pubblicata da uno sviluppatore indipendente. Contatto: <a href="mailto:fnkodirov@gmail.com">fnkodirov@gmail.com</a>.</p>
+
+    <h3>Cosa viene salvato sul tuo dispositivo</h3>
+    <ul>
+      <li>livelli completati, stelle e il tuo miglior tempo senza indizi;</li>
+      <li>monete, parole trovate, trofei, potenziamenti e aspetti acquistati;</li>
+      <li>ricompense giornaliere, sfide e serie di giorni;</li>
+      <li>il nome e l’avatar che hai scelto tu;</li>
+      <li>la lingua del gioco e le impostazioni.</li>
+    </ul>
+    <p>Questi dati sono nella memoria del dispositivo. Noi non li riceviamo né li vediamo: il gioco non ha un server proprio, account, analisi né segnalazioni di errori. Il nome che inserisci resta sul dispositivo e non viene inviato da nessuna parte.</p>
+
+    <h3>Pubblicità</h3>
+    <p>L’app mostra pubblicità tramite Google AdMob:</p>
+    <ul>
+      <li>un banner in fondo allo schermo durante un livello: compare da solo;</li>
+      <li>un video con ricompensa: solo quando sei tu a toccare il pulsante per ottenere indizi o monete.</li>
+    </ul>
+    <p>Non ci sono annunci a schermo intero tra i livelli. Qualsiasi acquisto nell’app (un pacchetto di monete o il «Pacchetto giocatore») rimuove il banner.</p>
+    <p>Per mostrare un annuncio, Google può ricevere:</p>
+    <ul>
+      <li>l’identificativo pubblicitario del dispositivo (Advertising ID);</li>
+      <li>dati del dispositivo: modello, versione del sistema operativo, lingua;</li>
+      <li>l’indirizzo IP e la posizione approssimativa che ne deriva;</li>
+      <li>eventi dell’annuncio: visualizzazione, visione, clic.</li>
+    </ul>
+    <p><strong>Consenso.</strong> Nei paesi in cui si applica il GDPR (Spazio economico europeo, Regno Unito, Svizzera), al primo avvio viene mostrato un modulo di consenso di Google. Lì la pubblicità personalizzata si attiva solo se la consenti e, finché non rispondi, non viene richiesto alcun annuncio. Puoi cambiare la scelta in qualsiasi momento: Impostazioni del gioco → «Impostazioni annunci» (la voce compare dove il modulo si applica). Negli altri paesi gli annunci possono essere personalizzati; puoi disattivarlo nelle impostazioni di Android (vedi sotto).</p>
+    <p>Come Google raccoglie e usa questi dati è descritto qui: <a href="https://policies.google.com/technologies/partner-sites">policies.google.com/technologies/partner-sites</a>.</p>
+
+    <h3>Acquisti</h3>
+    <p>I pacchetti di monete e il «Pacchetto giocatore» si acquistano tramite Google Play. Il pagamento è incassato ed elaborato da Google: noi non riceviamo né vediamo il numero della carta, il nome di chi paga o altri dati di pagamento. Per ripristinare gli acquisti (ad esempio dopo una reinstallazione), l’app chiede a Google Play quali acquisti ha il tuo account; la conferma dell’acquisto è usata solo sul dispositivo e sul nostro server non viene conservato nulla.</p>
+
+    <h3>Trasferimento dei progressi e backup</h3>
+    <p><strong>File.</strong> I pulsanti «Salva in un file» e «Carica da un file» nelle impostazioni del gioco creano e leggono un file con i tuoi progressi, solo quando li tocchi tu. Dove mandare il file (cloud, messaggistica, altro telefono) lo decidi tu dal menu di sistema; l’app non lo invia da nessuna parte.</p>
+    <p><strong>Backup di Android.</strong> Se sul telefono è attivo il backup di Google, il sistema può copiare nel tuo account Google il database dei progressi e le impostazioni del gioco e ripristinarli su un telefono nuovo. Lo fa Android secondo le regole di Google, non noi; puoi disattivarlo nelle impostazioni del telefono: <em>Impostazioni → Google → Backup</em>.</p>
+
+    <h3>Il pulsante «Condividi»</h3>
+    <p>Apre il menu di condivisione del sistema con un breve testo e un link al gioco. L’app non invia nulla da sola: il destinatario lo scegli tu.</p>
+
+    <h3>Pronuncia delle parole</h3>
+    <p>In «Il mio dizionario» puoi ascoltare una parola. A pronunciarla non è la nostra app, ma la sintesi vocale integrata nel dispositivo: la parola le viene passata. Su Android di solito sono i «Servizi vocali di Google»: se la voce necessaria non è scaricata sul dispositivo, il servizio può elaborare il testo sui propri server. Noi non riceviamo né conserviamo quel testo.</p>
+
+    <h3>Rete e autorizzazioni</h3>
+    <p>Il gioco funziona senza internet. La rete serve solo per pubblicità, acquisti e, se una voce non è scaricata, per la sintesi vocale. L’app non chiede accesso a contatti, fotocamera, microfono, posizione, foto o file del dispositivo.</p>
+
+    <h3>Conservazione e cancellazione</h3>
+    <p>I dati del gioco restano sul dispositivo finché non tocchi «Cancella i risultati» nelle impostazioni o disinstalli l’app. La copia nel tuo account Google (se il backup è attivo) può essere eliminata nelle impostazioni di backup di Google. I dati pubblicitari sono conservati da Google secondo le proprie regole.</p>
+
+    <h3>Cosa puoi fare</h3>
+    <ul>
+      <li>Reimpostare o disattivare del tutto l’identificativo pubblicitario: <em>Impostazioni Android → Privacy → Annunci</em> (su alcuni telefoni <em>Impostazioni → Google → Annunci</em>).</li>
+      <li>Cambiare il consenso alla pubblicità: Impostazioni del gioco → «Impostazioni annunci».</li>
+      <li>Cancellare i progressi: «Cancella i risultati» nelle impostazioni del gioco.</li>
+      <li>Domande sui tuoi dati — scrivi all’indirizzo qui sotto. Non conserviamo tuoi dati personali, quindi le richieste sui dati pubblicitari vanno rivolte a Google.</li>
+    </ul>
+
+    <h3>Bambini</h3>
+    <p>L’app non è destinata ai bambini sotto i 13 anni e non raccoglie consapevolmente alcun dato su di loro.</p>
+
+    <h3>Modifiche</h3>
+    <p>Se questa informativa cambia, il nuovo testo sarà pubblicato su questa pagina e la data di entrata in vigore aggiornata.</p>
+
+    <h3>Contatto</h3>
+    <p>Domande: <a href="mailto:fnkodirov@gmail.com">fnkodirov@gmail.com</a></p>
+
+  </section>
+
+  <hr>
+
+  <section id="tr" lang="tr">
+
+    <h2>Gizlilik Politikası</h2>
+    <p class="updated">Yürürlük tarihi: 1 Ekim 2026</p>
+
+    <h3>Kısaca</h3>
+    <p>Oyun hesap veya kayıt istemez, kendi sunucusu yoktur; kişisel verilerinizi ne toplarız ne de görürüz. İlerlemeniz cihazınızda saklanır. Uygulamadaki üçüncü taraf hizmetler: Google AdMob (reklam), Google Play (satın alma) ve cihazınızın konuşma sentezleyicisi (kelime telaffuzu).</p>
+
+    <h3>Biz kimiz</h3>
+    <p>Word Hunter uygulaması (mağazada sayfa diline göre Word Hunter, Словолов, Soʻz Ovi, Chasse aux mots, Wortjagd, Cazapalabras, Caça-Palavras, Caccia Parole, Buru Kata, Kelime Avı, Ловець слів, Łowca Słów adlarıyla yer alır; kimlik <code>com.wordhunter.game</code>) bağımsız bir geliştirici tarafından yayımlanır. İletişim: <a href="mailto:fnkodirov@gmail.com">fnkodirov@gmail.com</a>.</p>
+
+    <h3>Cihazınızda neler saklanır</h3>
+    <ul>
+      <li>tamamlanan bölümler, yıldızlar ve ipucusuz en iyi süreniz;</li>
+      <li>jetonlar, bulunan kelimeler, kupalar, satın alınan geliştirmeler ve görünümler;</li>
+      <li>günlük ödüller, görevler ve gün serisi;</li>
+      <li>kendi seçtiğiniz ad ve avatar;</li>
+      <li>oyun dili ve ayarlar.</li>
+    </ul>
+    <p>Bu veriler cihazın belleğinde durur. Onları almayız ve görmeyiz: oyunun kendi sunucusu, hesapları, analitiği ve hata raporları yoktur. Girdiğiniz ad cihazınızda kalır ve hiçbir yere gönderilmez.</p>
+
+    <h3>Reklam</h3>
+    <p>Uygulama reklamları Google AdMob üzerinden gösterir:</p>
+    <ul>
+      <li>bir bölüm sırasında ekranın altında banner — kendiliğinden görünür;</li>
+      <li>ödüllü video — yalnızca ipucu ya da jeton almak için düğmeye siz kendiniz bastığınızda.</li>
+    </ul>
+    <p>Bölümler arasında tam ekran reklam hiç yoktur. Uygulamadaki her satın alma (bir jeton paketi veya “Oyuncu paketi”) banner’ı kaldırır.</p>
+    <p>Reklam göstermek için Google şunları alabilir:</p>
+    <ul>
+      <li>cihazın reklam kimliği (Advertising ID);</li>
+      <li>cihaz bilgileri: model, işletim sistemi sürümü, dil;</li>
+      <li>IP adresi ve ondan çıkarılan yaklaşık konum;</li>
+      <li>reklam olayları: gösterim, izleme, tıklama.</li>
+    </ul>
+    <p><strong>Onay.</strong> GDPR’nin geçerli olduğu ülkelerde (Avrupa Ekonomik Alanı, Birleşik Krallık, İsviçre) ilk açılışta Google onay formu gösterilir. Kişiselleştirilmiş reklam orada yalnızca siz izin verirseniz açılır ve siz yanıt verene kadar reklam istenmez. Seçiminizi istediğiniz zaman değiştirebilirsiniz: Oyun ayarları → “Reklam ayarları” (bu öğe, formun geçerli olduğu yerlerde görünür). Diğer ülkelerde reklamlar kişiselleştirilmiş olabilir; bunu Android ayarlarından kapatabilirsiniz (aşağıya bakın).</p>
+    <p>Google’ın bu verileri nasıl topladığı ve kullandığı burada anlatılır: <a href="https://policies.google.com/technologies/partner-sites">policies.google.com/technologies/partner-sites</a>.</p>
+
+    <h3>Satın almalar</h3>
+    <p>Jeton paketleri ve “Oyuncu paketi” Google Play üzerinden satın alınır. Ödemeyi Google alır ve işler: kart numarasını, ödeyenin adını ve diğer ödeme bilgilerini biz almayız ve görmeyiz. Satın aldıklarınızı geri getirmek için (örneğin yeniden kurulumdan sonra) uygulama, hesabınızda hangi satın almalar olduğunu Google Play’e sorar; satın alma onayı yalnızca cihazda kullanılır, bizim hiçbir sunucumuzda bir şey saklanmaz.</p>
+
+    <h3>İlerlemeyi taşıma ve yedekleme</h3>
+    <p><strong>Dosya.</strong> Oyun ayarlarındaki “Dosyaya kaydet” ve “Dosyadan yükle” düğmeleri ilerlemenizi içeren bir dosya oluşturur ve okur — yalnızca siz bastığınızda. Dosyanın nereye gideceğini (bulut, mesajlaşma uygulaması, başka telefon) sistem menüsünden siz seçersiniz; uygulama onu hiçbir yere göndermez.</p>
+    <p><strong>Android yedeklemesi.</strong> Telefonunuzda Google yedeklemesi açıksa, sistem oyunun ilerleme veritabanını ve ayarlarını Google hesabınıza kopyalayabilir ve yeni bir telefonda geri yükleyebilir. Bunu Google’ın kurallarıyla Android yapar, biz değil; telefon ayarlarından kapatabilirsiniz: <em>Ayarlar → Google → Yedekleme</em>.</p>
+
+    <h3>“Paylaş” düğmesi</h3>
+    <p>Kısa bir metin ve oyunun bağlantısıyla sistemin paylaşım menüsünü açar. Uygulamanın kendisi hiçbir şey göndermez: alıcıyı siz seçersiniz.</p>
+
+    <h3>Kelime telaffuzu</h3>
+    <p>“Sözlüğüm” bölümünde bir kelimeyi dinleyebilirsiniz. Onu bizim uygulamamız değil, cihaza yerleşik konuşma sentezleyicisi seslendirir — kelime ona iletilir. Android’de bu genellikle “Google Konuşma Hizmetleri”dir: gerekli ses cihaza indirilmemişse hizmet metni kendi sunucularında işleyebilir. Bu metni biz almayız ve saklamayız.</p>
+
+    <h3>Ağ ve izinler</h3>
+    <p>Oyun internet olmadan çalışır. Ağ yalnızca reklam, satın alma ve ses indirilmemişse konuşma sentezleyici için gerekir. Uygulama kişilere, kameraya, mikrofona, konuma, fotoğraflara ya da cihazınızın dosyalarına erişim istemez.</p>
+
+    <h3>Saklama süresi ve silme</h3>
+    <p>Oyun verileri, ayarlardan “Sonuçları sil”e basana veya uygulamayı kaldırana kadar cihazda kalır. Google hesabınızdaki kopya (yedekleme açıksa) Google’ın yedekleme ayarlarından silinebilir. Reklam verilerini Google kendi kurallarına göre saklar.</p>
+
+    <h3>Neler yapabilirsiniz</h3>
+    <ul>
+      <li>Reklam kimliğini sıfırlamak veya tamamen kapatmak: <em>Android Ayarlar → Gizlilik → Reklamlar</em> (bazı telefonlarda <em>Ayarlar → Google → Reklamlar</em>).</li>
+      <li>Reklam onayınızı değiştirmek: Oyun ayarları → “Reklam ayarları”.</li>
+      <li>İlerlemeyi silmek: oyun ayarlarındaki “Sonuçları sil”.</li>
+      <li>Verilerinizle ilgili sorular — aşağıdaki adrese. Sizin kişisel verilerinizi saklamadığımız için reklam verilerine ilişkin talepler Google’a yöneltilmelidir.</li>
+    </ul>
+
+    <h3>Çocuklar</h3>
+    <p>Uygulama 13 yaşından küçük çocuklara yönelik değildir ve onlar hakkında bilerek hiçbir veri toplamaz.</p>
+
+    <h3>Değişiklikler</h3>
+    <p>Politika değişirse yeni metin bu sayfada yayımlanır ve yürürlük tarihi güncellenir.</p>
+
+    <h3>İletişim</h3>
+    <p>Sorular için: <a href="mailto:fnkodirov@gmail.com">fnkodirov@gmail.com</a></p>
+
+  </section>
+
+  <hr>
+
+  <section id="id" lang="id">
+
+    <h2>Kebijakan Privasi</h2>
+    <p class="updated">Berlaku sejak: 1 Oktober 2026</p>
+
+    <h3>Singkatnya</h3>
+    <p>Permainan ini tidak memerlukan akun atau pendaftaran, tidak punya server sendiri, dan kami tidak mengumpulkan maupun melihat data pribadi Anda. Kemajuan Anda disimpan di perangkat Anda. Layanan pihak ketiga di dalam aplikasi adalah Google AdMob (iklan), Google Play (pembelian), dan pensintesis suara di perangkat Anda (pengucapan kata).</p>
+
+    <h3>Siapa kami</h3>
+    <p>Aplikasi Word Hunter (di toko tampil dengan nama Word Hunter, Словолов, Soʻz Ovi, Chasse aux mots, Wortjagd, Cazapalabras, Caça-Palavras, Caccia Parole, Buru Kata, Kelime Avı, Ловець слів, Łowca Słów, sesuai bahasa halaman; ID aplikasi <code>com.wordhunter.game</code>) diterbitkan oleh pengembang independen. Kontak: <a href="mailto:fnkodirov@gmail.com">fnkodirov@gmail.com</a>.</p>
+
+    <h3>Apa yang disimpan di perangkat Anda</h3>
+    <ul>
+      <li>level yang selesai, bintang, dan waktu terbaik Anda tanpa petunjuk;</li>
+      <li>koin, kata yang ditemukan, piala, peningkatan dan tampilan yang dibeli;</li>
+      <li>hadiah harian, tantangan, dan rangkaian hari;</li>
+      <li>nama dan avatar yang Anda pilih sendiri;</li>
+      <li>bahasa permainan dan pengaturan.</li>
+    </ul>
+    <p>Data ini berada di penyimpanan perangkat. Kami tidak menerima atau melihatnya: permainan ini tidak punya server sendiri, akun, analitik, maupun laporan kerusakan. Nama yang Anda masukkan tetap di perangkat dan tidak dikirim ke mana pun.</p>
+
+    <h3>Iklan</h3>
+    <p>Aplikasi menampilkan iklan melalui Google AdMob:</p>
+    <ul>
+      <li>spanduk di bagian bawah layar saat bermain level — muncul dengan sendirinya;</li>
+      <li>video berhadiah — hanya saat Anda sendiri menekan tombol untuk mendapatkan petunjuk atau koin.</li>
+    </ul>
+    <p>Tidak ada iklan layar penuh di antara level. Setiap pembelian di aplikasi (paket koin atau «Paket pemain») menghilangkan spanduk.</p>
+    <p>Untuk menayangkan iklan, Google dapat menerima:</p>
+    <ul>
+      <li>ID iklan perangkat (Advertising ID);</li>
+      <li>informasi perangkat: model, versi sistem operasi, bahasa;</li>
+      <li>alamat IP dan perkiraan lokasi yang diturunkan darinya;</li>
+      <li>peristiwa iklan: tayangan, tontonan, klik.</li>
+    </ul>
+    <p><strong>Persetujuan.</strong> Di negara yang menerapkan GDPR (Wilayah Ekonomi Eropa, Inggris, Swiss), formulir persetujuan Google ditampilkan saat pertama kali dibuka. Di sana iklan yang dipersonalisasi baru aktif jika Anda mengizinkan, dan tidak ada iklan yang diminta sebelum Anda menjawab. Anda dapat mengubah pilihan kapan saja: Setelan permainan → «Setelan iklan» (opsi ini muncul di tempat formulir berlaku). Di negara lain iklan dapat dipersonalisasi; Anda dapat menonaktifkannya di setelan Android (lihat di bawah).</p>
+    <p>Cara Google mengumpulkan dan menggunakan data ini dijelaskan di sini: <a href="https://policies.google.com/technologies/partner-sites">policies.google.com/technologies/partner-sites</a>.</p>
+
+    <h3>Pembelian</h3>
+    <p>Paket koin dan «Paket pemain» dibeli melalui Google Play. Google yang menerima dan memproses pembayaran: kami tidak menerima atau melihat nomor kartu, nama pembayar, maupun data pembayaran lainnya. Untuk memulihkan pembelian (misalnya setelah memasang ulang), aplikasi menanyakan kepada Google Play pembelian apa saja yang ada di akun Anda; konfirmasi pembelian hanya dipakai di perangkat, dan tidak ada yang disimpan di server kami.</p>
+
+    <h3>Memindahkan kemajuan dan pencadangan</h3>
+    <p><strong>Berkas.</strong> Tombol «Simpan ke berkas» dan «Muat dari berkas» di setelan permainan membuat dan membaca berkas berisi kemajuan Anda — hanya saat Anda sendiri menekannya. Ke mana berkas itu dikirim (penyimpanan awan, aplikasi pesan, ponsel lain) Anda tentukan sendiri lewat menu sistem; aplikasi tidak mengirimnya ke mana pun.</p>
+    <p><strong>Pencadangan Android.</strong> Jika pencadangan Google aktif di ponsel Anda, sistem dapat menyalin basis data kemajuan dan setelan permainan ke akun Google Anda dan memulihkannya di ponsel baru. Ini dilakukan Android menurut aturan Google, bukan kami; Anda dapat menonaktifkannya di setelan ponsel: <em>Setelan → Google → Pencadangan</em>.</p>
+
+    <h3>Tombol «Bagikan»</h3>
+    <p>Tombol ini membuka menu berbagi sistem dengan teks singkat dan tautan ke permainan. Aplikasi sendiri tidak mengirim apa pun: penerimanya Anda yang memilih.</p>
+
+    <h3>Pengucapan kata</h3>
+    <p>Di «Kamus saya» Anda dapat mendengarkan sebuah kata. Yang mengucapkannya bukan aplikasi kami, melainkan pensintesis suara bawaan perangkat — kata itu diteruskan kepadanya. Di Android biasanya «Layanan Ucapan Google»: jika suara yang dibutuhkan belum diunduh ke perangkat, layanan dapat memproses teks di server miliknya sendiri. Kami tidak menerima maupun menyimpan teks itu.</p>
+
+    <h3>Jaringan dan izin</h3>
+    <p>Permainan berjalan tanpa internet. Jaringan hanya dibutuhkan untuk iklan, pembelian, dan — bila suara belum diunduh — pensintesis suara. Aplikasi tidak meminta akses ke kontak, kamera, mikrofon, lokasi, foto, atau berkas di perangkat Anda.</p>
+
+    <h3>Masa penyimpanan dan penghapusan</h3>
+    <p>Data permainan tetap di perangkat sampai Anda menekan «Hapus hasil» di setelan atau mencopot aplikasi. Salinan di akun Google Anda (jika pencadangan aktif) dapat dihapus di setelan pencadangan Google. Data iklan disimpan Google menurut aturannya sendiri.</p>
+
+    <h3>Yang dapat Anda lakukan</h3>
+    <ul>
+      <li>Mengatur ulang atau menonaktifkan sepenuhnya ID iklan: <em>Setelan Android → Privasi → Iklan</em> (di sebagian ponsel <em>Setelan → Google → Iklan</em>).</li>
+      <li>Mengubah persetujuan iklan: Setelan permainan → «Setelan iklan».</li>
+      <li>Menghapus kemajuan: «Hapus hasil» di setelan permainan.</li>
+      <li>Pertanyaan tentang data Anda — tulis ke alamat di bawah. Kami tidak menyimpan data pribadi Anda, sehingga permintaan tentang data iklan harus ditujukan kepada Google.</li>
+    </ul>
+
+    <h3>Anak-anak</h3>
+    <p>Aplikasi ini tidak ditujukan untuk anak di bawah 13 tahun dan tidak dengan sengaja mengumpulkan data apa pun tentang mereka.</p>
+
+    <h3>Perubahan</h3>
+    <p>Jika kebijakan ini berubah, teks baru akan diterbitkan di halaman ini dan tanggal berlakunya diperbarui.</p>
+
+    <h3>Kontak</h3>
+    <p>Pertanyaan: <a href="mailto:fnkodirov@gmail.com">fnkodirov@gmail.com</a></p>
 
   </section>
 
